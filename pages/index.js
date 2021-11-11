@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-
 import Layout, { siteTitle } from "../components/Layout";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "./../lib/posts";
@@ -10,13 +9,12 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Hunusual Blog</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>I am a web developer (no job yet) </p>
+        <p>I am a discord bot</p>
         <p>
-          (This is a sample website - you’ll be building a site like this on{" "}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+         Hunusual, is a utility discord bot that makes you manage your server easily made by <Link href="https://github.com/Hallel9">Hallel</Link> and <Link href="https://github.com/UnusualAbsurd">UnusualAbsurd</Link>. This bot is made using <Link href="https://discord.js.org">discord.js</Link> and <Link href="https://typescript.com">typescript</Link>
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
